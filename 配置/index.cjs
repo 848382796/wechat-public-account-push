@@ -16,7 +16,7 @@ const USER_CONFIG = {
   PROVINCE: '山西',
   CITY: '清徐',
 
-  USERS: [
+  USERS: {
     {
       // 想要发送的人的名字
       name: '臭臭',
@@ -26,7 +26,7 @@ const USER_CONFIG = {
       useTemplateId: '1_5UagkQ2pYgOj542AGMUC5pnU4WZXayFu_Z5quVu0w',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '11-18',
-      festivals: [
+      festivals: {
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
           type: '*生日', name: '臭臭', year: '2002', date: '10-14',
@@ -38,27 +38,27 @@ const USER_CONFIG = {
         {
           type: '节日', name: '相识纪念日', year: '2019', date: '03-09',
         },
-      ],
+        },
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2019-06-27' },
         
-      ],
+        },
     },
-  ],
+ },
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
   CALLBACK_TEMPLATE_ID: '',
 
-  CALLBACK_USERS: [
+  CALLBACK_USERS: {
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: '',
     }
-  ],
+},
 
 }
 
